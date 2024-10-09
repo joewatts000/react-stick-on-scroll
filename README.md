@@ -10,6 +10,12 @@ A lightweight, customizable React component that smoothly animates elements base
 - 📱 Responsive and works with dynamic content
 - 🎣 Includes a useful `useScrollPercentage` hook for custom implementations
 
+
+
+https://github.com/user-attachments/assets/9d9991a4-cce4-4f67-a335-a5136d3974e4
+
+
+
 ## Installation
 
 ```bash
