@@ -12,7 +12,7 @@ function App() {
             <a href="#features">Features</a>
             <a href="#examples">Examples</a>
             <a href="#installation">Installation</a>
-            <a href="https://github.com/YOUR_USERNAME/react-stick-on-scroll">GitHub</a>
+            <a href="https://github.com/joewatts000/react-stick-on-scroll">GitHub</a>
           </nav>
         </header>
       </StickOnScroll>
@@ -50,7 +50,7 @@ function App() {
       </main>
 
       <footer>
-        <p>MIT License © {new Date().getFullYear()} YOUR_NAME</p>
+        <p>MIT License © {new Date().getFullYear()} Joe Watts</p>
       </footer>
     </div>
   );
