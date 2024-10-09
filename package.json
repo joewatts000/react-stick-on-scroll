@@ -6,7 +6,10 @@
   "scripts": {
     "test": "jest",
     "build": "rollup -c rollup.config.js",
-    "prepare": "npm run build"
+    "prepare": "npm run build",
+    "demo:install": "cd demo && npm install",
+    "demo:start": "cd demo && npm start",
+    "demo:build": "cd demo && npm run build"
   },
   "keywords": [
     "react",

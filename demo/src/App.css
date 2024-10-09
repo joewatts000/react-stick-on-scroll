@@ -1,0 +1,49 @@
+.App {
+  text-align: center;
+}
+
+.sticky-header {
+  background: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 1rem;
+  width: 100%;
+  z-index: 1000;
+}
+
+.sticky-header nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.sticky-header a {
+  color: #333;
+  text-decoration: none;
+}
+
+section {
+  padding: 4rem 2rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero {
+  background: linear-gradient(45deg, #2196F3, #21CBF3);
+  color: white;
+}
+
+pre {
+  background: #f5f5f5;
+  padding: 1rem;
+  border-radius: 4px;
+  overflow-x: auto;
+}
+
+footer {
+  padding: 2rem;
+  background: #333;
+  color: white;
+}
