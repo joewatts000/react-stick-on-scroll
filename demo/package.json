@@ -36,5 +36,8 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://joewatts000.github.io/react-stick-on-scroll"
+  "homepage": "https://joewatts000.github.io/react-stick-on-scroll",
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
+  }
 }
