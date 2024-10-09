@@ -1,6 +1,6 @@
 {
   "name": "react-stick-on-scroll",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A React component that animates its position based on scroll progress",
   "main": "dist/index.js",
   "scripts": {
