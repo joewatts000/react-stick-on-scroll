@@ -1,0 +1,53 @@
+{
+  "name": "react-stick-on-scroll",
+  "version": "1.0.0",
+  "description": "A React component that animates its position based on scroll progress",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "rollup -c rollup.config.js",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "react",
+    "scroll",
+    "animation",
+    "sticky",
+    "header"
+  ],
+  "author": "Joe Watts",
+  "license": "MIT",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.23.0",
+    "@babel/preset-env": "^7.22.20",
+    "@babel/preset-react": "^7.22.15",
+    "@rollup/plugin-babel": "^6.0.3",
+    "@rollup/plugin-commonjs": "^25.0.4",
+    "@rollup/plugin-node-resolve": "^15.2.1",
+    "@types/react": "^18.2.28",
+    "rollup": "^3.29.4",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "typescript": "^5.2.2",
+    "@testing-library/react": "^14.0.0",
+    "jest": "^29.7.0",
+    "@types/jest": "^29.5.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joewatts000/react-stick-on-scroll.git"
+  },
+  "bugs": {
+    "url": "https://github.com/joewatts000/react-stick-on-scroll/issues"
+  },
+  "homepage": "https://github.com/joewatts000/react-stick-on-scroll#readme"
+}
