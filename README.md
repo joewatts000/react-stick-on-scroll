@@ -40,6 +40,8 @@ function App() {
 }
 ```
 
+Demo: <https://joewatts000.github.io/react-stick-on-scroll>
+
 ### Using the Hook Directly
 
 If you need more control, you can use the `useScrollPercentage` hook directly:
@@ -132,6 +134,8 @@ function Header() {
   );
 }
 ```
+
+Demo link: <https://joewatts000.github.io/react-stick-on-scroll>
 
 ## Troubleshooting
 
