@@ -12,6 +12,7 @@ A lightweight, customizable React component that smoothly animates elements base
 
 ![react-stick-on-scroll](https://github.com/user-attachments/assets/405c3bf6-5a12-4c94-89ad-0aad605d474b)
 
+<img src="kitten.jpg" alt="Kitten" title="A cute kitten" width="150" height="100" />
 
 ## Installation
 
