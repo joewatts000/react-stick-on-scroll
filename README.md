@@ -10,11 +10,11 @@ A lightweight, customizable React component that smoothly animates elements base
 - 📱 Responsive and works with dynamic content
 - 🎣 Includes a useful `useScrollPercentage` hook for custom implementations
 
+<br />
 <p align="center">
-<p></p>
-<img src="https://github.com/user-attachments/assets/405c3bf6-5a12-4c94-89ad-0aad605d474b" alt="react-stick-on-scroll" title="react-stick-on-scroll" width="219" height="480" style="padding: 16px;" />
-<p></p>
+<img src="https://github.com/user-attachments/assets/405c3bf6-5a12-4c94-89ad-0aad605d474b" alt="react-stick-on-scroll" title="react-stick-on-scroll" width="219" height="480" />
 </p>
+<br />
 
 ## Installation
 
