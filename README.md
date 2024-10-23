@@ -96,8 +96,8 @@ function CustomComponent() {
 | `startScroll` | number | 0 | The scroll position (in pixels) at which the animation begins |
 | `className` | string | '' | Additional CSS classes to apply to the wrapper |
 | `children` | ReactNode | - | The content to be animated |
-| `...props` | any | - | Any additional props are passed to the wrapper div |
 | `zIndex`   | number | 1 | zindex for the element |
+| `...props` | any | - | Any additional props are passed to the wrapper div |
 
 ### useScrollPercentage Hook
 
