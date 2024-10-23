@@ -20,7 +20,11 @@ A lightweight, customizable React component that smoothly animates elements base
 
 ```bash
 npm install react-stick-on-scroll
-# or
+```
+
+or
+
+```bash
 yarn add react-stick-on-scroll
 ```
 
@@ -102,16 +106,15 @@ function CustomComponent() {
 ### useScrollPercentage Hook
 
 ```typescript
-function useScrollPercentage(scrollTarget: HTMLElement, startScroll: number, maxScroll: number): number
+function useScrollPercentage(scrollTarget: HTMLElement, startScroll: number): number
 ```
 
-Returns a number between 0 and 100 representing the scroll progress between `startScroll` and `maxScroll`.
+Returns a number between 0 and 100 representing the scroll progress between `startScroll` and `startScroll + element height` at which point the element will be fully in view
 
 #### Parameters
 
 - `scrollTarget`: The element that is currently responsible for scrolling, defaults to window
 - `startScroll`: The scroll position (in pixels) at which to start calculating the percentage
-- `maxScroll`: The scroll position (in pixels) to use as 100%
 
 #### Return Value
 
