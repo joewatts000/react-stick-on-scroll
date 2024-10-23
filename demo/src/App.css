@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
 }
@@ -13,12 +17,13 @@
 .sticky-header nav {
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .sticky-header a {
   color: #333;
   text-decoration: none;
+  font-size: 14px;
 }
 
 section {
@@ -49,6 +54,10 @@ footer {
   color: white;
 }
 
+h1 {
+  font-size: 1.3rem;
+}
+
 ul {
   list-style: none;
   padding: 0;
@@ -59,6 +68,36 @@ li {
   margin-bottom: 0.8rem;
 }
 
-.example-container {
+.example-container pre {
   text-align: left;
+}
+
+.example-container code {
+  font-size: 8px;
+}
+
+@media screen and (min-width: 480px) {
+  .example-container code {
+    font-size: 10px;
+  }
+}
+@media screen and (min-width: 568px) {
+  .example-container code {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+  .sticky-header a {
+    font-size: 16px;
+  }
+  .sticky-header nav {
+    gap: 2rem;
+  }
+  .example-container code {
+    font-size: 14px;
+  }
 }

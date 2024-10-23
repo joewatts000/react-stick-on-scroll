@@ -1,12 +1,12 @@
 import { StickOnScroll } from 'react-stick-on-scroll';
-import SyntaxHighlighter from 'react-syntax-highlighter';
-import { docco } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import './App.css';
+import { dracula } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 
 function App() {
   return (
     <div className="App">
-      <StickOnScroll startScroll={100}>
+      <StickOnScroll startScroll={800}>
         <header className="sticky-header">
           <h1>React Stick On Scroll</h1>
           <nav>
@@ -40,59 +40,58 @@ function App() {
         <section id="examples" className='hero'>
           <h2>Examples</h2>
           <div className="example-container">
-            <SyntaxHighlighter language="javascript" style={docco} wrapLongLines>
+            <SyntaxHighlighter language="javascript" style={dracula} wrapLongLines>
               {`
-                import { StickOnScroll } from 'react-stick-on-scroll';
+  import { StickOnScroll } from 'react-stick-on-scroll';
 
-                function App() {
-                  return (
-                    <div>
-                      <StickOnScroll>
-                        <header>
-                          This header will animate down from the top as you scroll
-                        </header>
-                      </StickOnScroll>
-                      
-                      {/* Your page content */}
-                    </div>
-                  );
-                }
+  function App() {
+    return (
+      <div>
+        <StickOnScroll>
+          <header>
+            Animates down from the top as you scroll
+          </header>
+        </StickOnScroll>
+          {/* Your page content */}
+      </div>
+    );
+  }
               `}
             </SyntaxHighlighter>
           </div>
           <div className="example-container">
             <p>If you need more control, you can use the useScrollPercentage hook directly:</p>
-            <SyntaxHighlighter language='javascript' style={docco} wrapLongLines>
+            <SyntaxHighlighter language='javascript' style={dracula} wrapLongLines>
               {`
-                import { useScrollPercentage } from 'react-stick-on-scroll';
+  import { useScrollPercentage } from 'react-stick-on-scroll';
 
-                function CustomComponent() {
-                  const headerRef = useRef(null);
-                  const [headerHeight, setHeaderHeight] = useState(0);
-                  
-                  useEffect(() => {
-                    if (headerRef.current) {
-                      setHeaderHeight(headerRef.current.offsetHeight);
-                    }
-                  }, []);
+  function CustomComponent() {
+    const headerRef = useRef(null);
+    const [headerHeight, setHeaderHeight] = useState(0);
+    
+    useEffect(() => {
+      if (headerRef.current) {
+        setHeaderHeight(headerRef.current.offsetHeight);
+      }
+    }, []);
 
-                  const scrollPercentage = useScrollPercentage(0, headerHeight);
-                  const currentTop = -headerHeight + (headerHeight * scrollPercentage) / 100;
+    const scrollPercentage = useScrollPercentage(0, headerHeight);
+    const currentTop = -headerHeight + (headerHeight * scrollPercentage) / 100;
 
-                  return (
-                    <div
-                      ref={headerRef}
-                      style={{
-                        transform: \`translateY(\${currentTop}px)\`,
-                        position: 'fixed',
-                        width: '100%',
-                        zIndex: 9
-                      }}
-                    >
-                      Custom implementation
-                    </div>
-                  );
-                }
+    return (
+      <div
+        ref={headerRef}
+        style={{
+          transform: \`translateY(\${currentTop}px)\`,
+          position: 'fixed',
+          width: '100%',
+          zIndex: 9
+        }}
+      >
+        Custom implementation
+      </div>
+    );
+  }
               `}
             </SyntaxHighlighter>
           </div>
