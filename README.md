@@ -111,7 +111,7 @@ Returns a number between 0 and 100 representing the scroll progress between `sta
 
 - `scrollTarget`: The element that is currently responsible for scrolling, defaults to window
 - `startScroll`: The scroll position (in pixels) at which to start calculating the percentage
-- `maxScroll`: The scroll position at which the percentage reaches 100
+- `maxScroll`: The scroll position (in pixels) to use as 100%
 
 #### Return Value
 
