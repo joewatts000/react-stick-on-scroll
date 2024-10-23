@@ -10,7 +10,9 @@ A lightweight, customizable React component that smoothly animates elements base
 - 📱 Responsive and works with dynamic content
 - 🎣 Includes a useful `useScrollPercentage` hook for custom implementations
 
-<img src="https://github.com/user-attachments/assets/405c3bf6-5a12-4c94-89ad-0aad605d474b" alt="react-stick-on-scroll" title="react-stick-on-scroll" width="219" height="480" />
+<p align="center">
+<img src="https://github.com/user-attachments/assets/405c3bf6-5a12-4c94-89ad-0aad605d474b" alt="react-stick-on-scroll" title="react-stick-on-scroll" width="219" height="480" style="padding: 16px;" />
+</p>
 
 ## Installation
 
@@ -31,7 +33,7 @@ function App() {
   return (
     <div>
       <StickOnScroll>
-        <header className="bg-white shadow-md p-4">
+        <header>
           This header will animate down from the top as you scroll
         </header>
       </StickOnScroll>
@@ -113,29 +115,7 @@ Returns a number between 0 and 100 representing the scroll progress between `sta
 
 A number between 0 and 100 representing the current scroll percentage.
 
-## Examples
-
-### Sticky Header
-
-```jsx
-import { StickOnScroll } from 'react-stick-on-scroll';
-
-function Header() {
-  return (
-    <StickOnScroll startScroll={100}>
-      <header className="bg-white shadow-md p-4">
-        <nav>
-          <ul className="flex justify-between">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-      </header>
-    </StickOnScroll>
-  );
-}
-```
+## Demo
 
 Demo link: <https://joewatts000.github.io/react-stick-on-scroll>
 

@@ -1,5 +1,6 @@
-import React from 'react';
 import { StickOnScroll } from 'react-stick-on-scroll';
+import SyntaxHighlighter from 'react-syntax-highlighter';
+import { docco } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 import './App.css';
 
 function App() {
@@ -20,8 +21,10 @@ function App() {
       <main>
         <section className="hero">
           <h1>React Stick On Scroll</h1>
-          <p>A lightweight, customizable React component that smoothly animates elements based on scroll position.</p>
+          <p>A lightweight, customizable React component that smoothly animates elements into a sticky position based on scroll position.</p>
           <pre>npm install react-stick-on-scroll</pre>
+          <p>or</p>
+          <pre>yarn add react-stick-on-scroll</pre>
         </section>
 
         <section id="features">
@@ -34,18 +37,71 @@ function App() {
           </ul>
         </section>
 
-        <section id="examples">
+        <section id="examples" className='hero'>
           <h2>Examples</h2>
           <div className="example-container">
-            {/* Add more examples here */}
+            <SyntaxHighlighter language="javascript" style={docco} wrapLongLines>
+              {`
+                import { StickOnScroll } from 'react-stick-on-scroll';
+
+                function App() {
+                  return (
+                    <div>
+                      <StickOnScroll>
+                        <header>
+                          This header will animate down from the top as you scroll
+                        </header>
+                      </StickOnScroll>
+                      
+                      {/* Your page content */}
+                    </div>
+                  );
+                }
+              `}
+            </SyntaxHighlighter>
+          </div>
+          <div className="example-container">
+            <p>If you need more control, you can use the useScrollPercentage hook directly:</p>
+            <SyntaxHighlighter language='javascript' style={docco} wrapLongLines>
+              {`
+                import { useScrollPercentage } from 'react-stick-on-scroll';
+
+                function CustomComponent() {
+                  const headerRef = useRef(null);
+                  const [headerHeight, setHeaderHeight] = useState(0);
+                  
+                  useEffect(() => {
+                    if (headerRef.current) {
+                      setHeaderHeight(headerRef.current.offsetHeight);
+                    }
+                  }, []);
+
+                  const scrollPercentage = useScrollPercentage(0, headerHeight);
+                  const currentTop = -headerHeight + (headerHeight * scrollPercentage) / 100;
+
+                  return (
+                    <div
+                      ref={headerRef}
+                      style={{
+                        transform: \`translateY(\${currentTop}px)\`,
+                        position: 'fixed',
+                        width: '100%',
+                        zIndex: 9
+                      }}
+                    >
+                      Custom implementation
+                    </div>
+                  );
+                }
+              `}
+            </SyntaxHighlighter>
           </div>
         </section>
 
         <section id="installation">
-          <h2>Installation</h2>
-          <pre>npm install react-stick-on-scroll</pre>
-          <h3>Usage</h3>
-          <pre>{}</pre>
+          <h2>Contributing</h2>
+          <p>Contributions are welcome! Feel free to open an issue or submit a pull request.</p>
+          <p>Github: <a href="https://github.com/joewatts000/react-stick-on-scroll?tab=readme-ov-file">joewatts000/react-stick-on-scroll</a></p>
         </section>
       </main>
 

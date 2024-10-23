@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "React Stick on Scroll Demo",
+  "name": "React Stick on Scroll Demo",
   "icons": [
     {
       "src": "favicon.ico",
