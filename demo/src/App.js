@@ -6,7 +6,7 @@ import { dracula } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 function App() {
   return (
     <div className="App">
-      <StickOnScroll startScroll={800}>
+      <StickOnScroll>
         <header className="sticky-header">
           <h1>React Stick On Scroll</h1>
           <nav>
